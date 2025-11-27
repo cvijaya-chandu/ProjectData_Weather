@@ -2,18 +2,19 @@ import argparse
 from datetime import datetime
 from weather_data import get_weather_data
 
-parser = argparse.ArgumentParser(description="Weather Data Fetcher")
+parser = argparse.ArgumentParser()
+
 parser.add_argument(
     "--city",
     type=str,
     required=True,
-    help="City name to fetch weather for",
+    help="City name to fetch weather for, mandatory parameter",
 )
 parser.add_argument(
     "--apikey",
     type=str,
     default="",
-    help="API key for OpenWeatherMap (optional)",
+    help="API key for OpenWeatherMap, Optional parameter",
 )
 args = parser.parse_args()
 city = args.city

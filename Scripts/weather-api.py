@@ -13,6 +13,7 @@ def weather():
         return jsonify({"error": "city is required"}), 400
 
     data = get_weather_data(city,api_key)
+    # print(data)
     dt = datetime.fromtimestamp(data["dt"]).strftime("%Y-%m-%d %H:%M:%S")
     response = {
         "description": f"Live weather data of {city}",

@@ -1,8 +1,8 @@
 
 import requests
 from datetime import datetime
-API_KEY = "e594d7f8c36c7d8ba95ce1f167dd7f31"
-#API_KEY = ""
+#API_KEY = "e594d7f8c36c7d8ba95ce1f167dd7f31"
+API_KEY = ""
 INTERVAL_SECONDS = 10
 URL = "https://api.openweathermap.org/data/2.5/weather"
 SIM_TEMP = 25.0

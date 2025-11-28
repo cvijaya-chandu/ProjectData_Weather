@@ -16,7 +16,7 @@ def weather():
     # print(data)
     dt = datetime.fromtimestamp(data["dt"]).strftime("%Y-%m-%d %H:%M:%S")
     response = {
-        "description": f"Live weather data of {city}",
+        "description": f"Simulated weather data of {city}" if not api_key == "" else f"Live weather data of {city}",
         "city": city,
         "timestamp": dt,
         "temperature": data["main"]["temp"],

@@ -7,7 +7,6 @@ weather_data = {'coord': {'lon': 24.9355, 'lat': 60.1695}, 'weather': [{'id': 80
 'sunset': 1764336386}, 'timezone': 7200, 'id': 658225, 'name': 'Helsinki', 'cod': 200}
 
 print(weather_data)
-print(type(weather_data))
 print(weather_data['main']['pressure'])
 print(weather_data['main']['temp'])
 

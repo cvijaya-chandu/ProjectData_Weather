@@ -1,6 +1,4 @@
 """This file includes the CLI wrapper """
-
-
 import argparse
 from datetime import datetime
 from weather_data import get_weather_data
@@ -22,11 +20,8 @@ parser.add_argument(
 args = parser.parse_args()
 city = args.city
 API_KEY = args.apikey
-weather_data = get_weather_data(city, API_KEY)
 
-city = input("Enter city: ")
-print("\n--- Weather for:", city, "---")
-
+print("\n--- Weather Data for", city, "---")
 weather_data = get_weather_data(city,API_KEY)
 dt = weather_data["dt"]
 readable_time = datetime.fromtimestamp(dt).strftime("%Y-%m-%d %H:%M:%S")

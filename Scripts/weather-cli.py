@@ -1,3 +1,6 @@
+"""This file includes the CLI wrapper """
+
+
 import argparse
 from datetime import datetime
 from weather_data import get_weather_data

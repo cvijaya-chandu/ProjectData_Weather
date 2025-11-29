@@ -24,7 +24,6 @@ def get_weather_from_api(city,key):
         'units': 'metric'
 
     }
-    print("Calling API for weather data")
     response = requests.get(URL, params=params, timeout=5)
     data = response.json()
     return data
